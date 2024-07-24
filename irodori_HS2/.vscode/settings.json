@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "irodori_HS3.sln"
+    "dotnet.defaultSolution": "irodori_HS2.sln"
 }
