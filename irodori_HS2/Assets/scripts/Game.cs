@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
 
-public class GameController : MonoBehaviour
+public class Game : MonoBehaviour
 {
     public GameObject cardPrefab; // カードのプレハブ
     public List<Sprite> cardFaces; // カードの表面スプライトのリスト
@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
     private List<GameObject> cards = new List<GameObject>(); // 生成されたカードのリスト
     private int flipCount = 0; // カードをめくった回数
 
-    void Start()
+    public void Start_Setup()
     {
         SetupGame(); // ゲームのセットアップを開始
         clearText.enabled = false; // 初期状態ではClearテキストを非表示にする

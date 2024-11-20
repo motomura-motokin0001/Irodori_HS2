@@ -19,7 +19,7 @@ public class Card : MonoBehaviour
     public delegate void CardFlippedHandler();
     public event CardFlippedHandler OnCardFlipped;
 
-    void Start()
+    public void Start()
     {
         image = GetComponent<Image>(); // Imageコンポーネントを取得
         ShowBack(); // 初期状態では裏面を表示
